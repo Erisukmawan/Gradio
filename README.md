@@ -6,7 +6,7 @@
 - [x] Question
 - [x] EDA and Data Cleaning
 - [x] Answers
-- [] Solution
+- [ ] Solution
 - [ ] Visualization
 
 ## On Progress
