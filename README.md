@@ -7,8 +7,10 @@
 - [x] EDA and Data Cleaning
 - [ ] Answers
 - [ ] Solution
+- [ ] Visualization
 
 ## On Progress
 - Problem Statement
 - Answers
 - Solution
+- Visualization
