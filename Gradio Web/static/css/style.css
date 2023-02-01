@@ -10007,7 +10007,7 @@ progress {
     flex: 0 0 auto;
     width: auto;
   }
-  .col-lg-13{
+  .col-lg-13 {
     flex: 0 0 auto;
     width: 100%;
     /* height: 88px; */
@@ -20601,6 +20601,7 @@ code {
 .stretch-card > .card {
   width: 100%;
   min-width: 100%;
+  height: 100%;
 }
 
 @media (min-width: 576px) {
