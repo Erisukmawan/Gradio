@@ -1,16 +1,13 @@
 # Gradio
 ## Global Warming And Climate Change In Indonesia Analysis
 ## To Do
-- [ ] Preliminary
-- [ ] Problem Statement
+- [x] Preliminary
+- [x] Problem Statement
 - [x] Question
 - [x] EDA and Data Cleaning
-- [ ] Answers
-- [ ] Solution
+- [x] Answers
+- [] Solution
 - [ ] Visualization
 
 ## On Progress
-- Problem Statement
-- Answers
-- Solution
 - Visualization
