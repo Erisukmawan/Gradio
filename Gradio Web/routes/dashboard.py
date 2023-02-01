@@ -8,3 +8,6 @@ def research():
 
 def scraper():
     return render_template('pages/scraper/index.html')
+
+def about():
+    return render_template('pages/about/about.html')
