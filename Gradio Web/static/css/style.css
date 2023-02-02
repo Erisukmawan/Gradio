@@ -205,25 +205,17 @@
     opacity: 1;
   }
 }
-#mapindo {
-  width: 100%;
-  height: 290px
-}
 #lineChart{
   width: 100%;
   height: 290px;
 }
-#rataRataSuhu {
+#rataRataSuhuJakarta, #ratasuhuindoperbulan, #suhuindopertahun, #mapindo, #rataRataSuhu, #populasi{
   width: 100%;
   height: 290px;
 }
-#rataRataSuhuJakarta, #ratasuhuindoperbulan{
+#populasi,#suhucurah, #kendaraan, #listrik {
   width: 100%;
-  height: 290px;
-}
-#suhuindopertahun {
-  width: 100%;
-  height: 290px;
+  height: 400px;
 }
 @-moz-keyframes bounce {
   0% {
