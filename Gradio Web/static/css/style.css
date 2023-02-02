@@ -209,11 +209,11 @@
   width: 100%;
   height: 290px;
 }
-#rataRataSuhuJakarta, #ratasuhuindoperbulan, #suhuindopertahun, #mapindo, #rataRataSuhu, #populasi{
+#rataRataSuhuJakarta, #ratasuhuindoperbulan, #suhuindopertahun, #mapindo, #rataRataSuhu, #populasi,#listrik{
   width: 100%;
   height: 290px;
 }
-#populasi,#suhucurah, #kendaraan, #listrik {
+#populasi,#suhucurah, #kendaraan  {
   width: 100%;
   height: 400px;
 }
