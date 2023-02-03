@@ -88,10 +88,18 @@
                   <div class="card-img-overlay text-dark p-5">
                     <h4 class="mb-0 mdi mdi-map-marker-circle shadow-bright"> {{ today['location' ] }}</h4>
                     <p class="display-2 my-3 shadow-bright">{{ today['temp_now'] }}</p>
-                    <h5> <span class="mdi mdi-cloud shadow-bright"> {{ today['condition'] }}</span></h5>
-                    <h5> <span class="mdi mdi-thermometer shadow-bright"> Curah Hujan {{ today['rain_precip'] }}</span>
+                    {% if 'berawan' in today['condition'].lower() %}
+                    <h5> <span class="mdi mdi-cloud shadow-bright" alt="weather"> {{ today['condition'] }}</span></h5>
+                    {% elif 'hujan' in today['condition'].lower() %}
+                    <h5> <span class="mdi mdi mdi-weather-rainy shadow-bright" alt="weather">{{ today['condition'] }}</span></h5>
+                    {% elif 'cerah' in today['condition'].lower() %}
+                    <h5> <span class="mdi mdi mdi-weather-sunny shadow-bright" alt="weather">{{ today['condition'] }}</span></h5>
+                    {% else %}
+                    <h5> <span class="mdi mdi-cloudy shadow-bright" alt="weather"> {{ today['condition'] }}</span></h5>
+                    {% endif %}
+                    <h5> <span class="mdi mdi mdi-water-percent shadow-bright"> Curah Hujan {{ today['rain_precip'] }}</span>
                     </h5>
-                    <h5> <span class="mdi mdi-fan shadow-bright"> Kecepatan Angin {{ today['wind'] }}</span></h5>
+                    <h5> <span class="mdi mdi mdi-weather-windy shadow-bright"> Kecepatan Angin {{ today['wind'] }}</span></h5>
                   </div>
                 </div>
               </div>
