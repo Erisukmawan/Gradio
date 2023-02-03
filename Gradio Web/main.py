@@ -2,7 +2,7 @@ from flask import Flask
 from routes.dashboard import (
     main_dashboard,
     research,
-    scraper,
+    radar,
     about
 )
 
@@ -13,7 +13,7 @@ app = Flask(__name__,
 
 app.add_url_rule('/', 'index', main_dashboard)
 app.add_url_rule('/research', '', research)
-app.add_url_rule('/scraper', 'scraper', scraper)
+app.add_url_rule('/radar', 'radar', radar)
 app.add_url_rule('/about', 'about', about)
 
 if __name__ == '__main__':

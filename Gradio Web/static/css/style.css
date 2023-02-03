@@ -25480,3 +25480,8 @@ dl li {
 }
 
 /*# sourceMappingURL=maps/style.css.map */
+
+/* Custom CSS by MRHRTZ */
+.shadow-bright {
+  text-shadow: 1px 2px 7px #ffffff;
+}
