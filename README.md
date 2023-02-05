@@ -5,13 +5,12 @@
 - [x] Problem Statement
 - [x] Question
 - [x] EDA and Data Cleaning
-- [ ] Description Cells
+- [x] Description Cells
 - [x] Answers
-- [ ] Solution
+- [x] Solution
 - [ ] Visualization (Web)
 - [ ] Power Point
 
 ## On Progress
-- Description Cells
-- Solution
-- Visualization
+- Visualization (Web)
+- Power Point
