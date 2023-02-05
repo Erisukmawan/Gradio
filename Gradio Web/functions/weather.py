@@ -59,7 +59,7 @@ def get_info_today(placeId):
         'temp_now': soup.select_one('.CurrentConditions--tempValue--MHmYY').text,
         'condition': soup.select_one('.CurrentConditions--phraseValue--mZC_p').text,
         'wind': soup.select_one('.Wind--windWrapper--3Ly7c:not(svg)').text.replace('Wind Direction',''),
-        'rain_precip': soup.select_one('div > section > div > ul > li.Column--column--3tAuz.Column--active--27U5T > a > div.Column--precip--3JCDO > span').text.replace('Kemungkinan Hujan','')
+        'rain_precip': soup.select_one('div > section > div > ul > li > a > div.Column--precip--3JCDO > span').text.replace('Kemungkinan Hujan','')
     }
 
     return result
@@ -67,4 +67,5 @@ def get_info_today(placeId):
 
 place_id = get_place_info('bandung')['placeId']
 today = get_info_today(place_id)
-print(today)
+# print(today)
+# open('scr.html', 'w', encoding='utf-8').w
