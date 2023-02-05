@@ -181,20 +181,20 @@ am5.ready(function () {
 
   // Set data
   var data = [{
-    country: "USA",
-    value: 2025
+    country: "DKI Jakarta",
+    value: 28.04
   }, {
-    country: "China",
-    value: 1882
+    country: "Riau",
+    value: 27.84
   }, {
-    country: "Japan",
-    value: 1809
+    country: "Jambi",
+    value: 27.79
   }, {
-    country: "Germany",
-    value: 1322
+    country: "Bangka Belitung",
+    value: 27.62
   }, {
-    country: "UK",
-    value: 1122
+    country: "Sumatera Selatan",
+    value: 27.40
   }];
 
   yAxis.data.setAll(data);
