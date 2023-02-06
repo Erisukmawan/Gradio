@@ -190,11 +190,11 @@ am5.ready(function () {
     country: "Jambi",
     value: 27.79
   }, {
+    country: "Kepulauan-riau",
+    value: 27.65
+  }, {
     country: "Bangka Belitung",
     value: 27.62
-  }, {
-    country: "Sumatera Selatan",
-    value: 27.40
   }];
 
   yAxis.data.setAll(data);
@@ -328,7 +328,57 @@ am5.ready(function () {
 
 
   // Set data
-  var data = generateDatas(200);
+  // var data = generateDatas(200);
+  var data = [
+    {
+      date: 1640995200000,
+      value: 27.21
+    },
+    {
+      date: 1643673600000,
+      value: 27.59
+    },
+    {
+      date: 1646092800000,
+      value: 27.9
+    },
+    {
+      date: 1648771200000,
+      value: 28.42
+    },
+    {
+      date: 1651363200000,
+      value: 28.25
+    },
+    {
+      date: 1654041600000,
+      value: 28.07
+    },
+    {
+      date: 1656633600000,
+      value: 28.04
+    },
+    {
+      date: 1659312000000,
+      value: 28.31
+    },
+    {
+      date: 1661990400000,
+      value: 28.1
+    },
+    {
+      date: 1664582400000,
+      value: 28.7
+    },
+    {
+      date: 1667260800000,
+      value: 27.97
+    },
+    {
+      date: 1669852800000,
+      value: 27.93
+    }
+  ]
   series.data.setAll(data);
   xAxis.data.setAll(data);
 
@@ -436,22 +486,508 @@ am5.ready(function () {
 
 
   // Set data
-  var data = generateDatas(1200);
+  // var data = generateDatas(1200);
+  var data = [
+    {
+      "date": -2177478432000,
+      "value": 25.4
+    },
+    {
+      "date": -2145942432000,
+      "value": 25.37
+    },
+    {
+      "date": -2114406432000,
+      "value": 25.37
+    },
+    {
+      "date": -2082870432000,
+      "value": 25.36
+    },
+    {
+      "date": -2051248032000,
+      "value": 25.41
+    },
+    {
+      "date": -2019712032000,
+      "value": 25.41
+    },
+    {
+      "date": -1988176032000,
+      "value": 25.33
+    },
+    {
+      "date": -1956640032000,
+      "value": 25.4
+    },
+    {
+      "date": -1925017632000,
+      "value": 25.39
+    },
+    {
+      "date": -1893481632000,
+      "value": 25.37
+    },
+    {
+      "date": -1861945632000,
+      "value": 25.54
+    },
+    {
+      "date": -1830409632000,
+      "value": 25.6
+    },
+    {
+      "date": -1798787232000,
+      "value": 25.56
+    },
+    {
+      "date": -1767251232000,
+      "value": 25.65
+    },
+    {
+      "date": -1735715232000,
+      "value": 25.62
+    },
+    {
+      "date": -1704179232000,
+      "value": 25.46
+    },
+    {
+      "date": -1672556832000,
+      "value": 25.44
+    },
+    {
+      "date": -1641020832000,
+      "value": 25.34
+    },
+    {
+      "date": -1609484832000,
+      "value": 25.56
+    },
+    {
+      "date": -1577948832000,
+      "value": 25.56
+    },
+    {
+      "date": -1546326432000,
+      "value": 25.45
+    },
+    {
+      "date": -1514790432000,
+      "value": 25.45
+    },
+    {
+      "date": -1483254432000,
+      "value": 25.45
+    },
+    {
+      "date": -1451719200000,
+      "value": 25.51
+    },
+    {
+      "date": -1420096800000,
+      "value": 25.46
+    },
+    {
+      "date": -1388560800000,
+      "value": 25.61
+    },
+    {
+      "date": -1357024800000,
+      "value": 25.54
+    },
+    {
+      "date": -1325488800000,
+      "value": 25.55
+    },
+    {
+      "date": -1293866400000,
+      "value": 25.42
+    },
+    {
+      "date": -1262330400000,
+      "value": 25.56
+    },
+    {
+      "date": -1230794400000,
+      "value": 25.66
+    },
+    {
+      "date": -1199258400000,
+      "value": 25.47
+    },
+    {
+      "date": -1167636600000,
+      "value": 25.49
+    },
+    {
+      "date": -1136100600000,
+      "value": 25.41
+    },
+    {
+      "date": -1104564600000,
+      "value": 25.53
+    },
+    {
+      "date": -1073028600000,
+      "value": 25.55
+    },
+    {
+      "date": -1041406200000,
+      "value": 25.54
+    },
+    {
+      "date": -1009870200000,
+      "value": 25.54
+    },
+    {
+      "date": -978334200000,
+      "value": 25.51
+    },
+    {
+      "date": -946798200000,
+      "value": 25.55
+    },
+    {
+      "date": -915175800000,
+      "value": 25.82
+    },
+    {
+      "date": -883639800000,
+      "value": 25.55
+    },
+    {
+      "date": -852109200000,
+      "value": 25.38
+    },
+    {
+      "date": -820573200000,
+      "value": 25.43
+    },
+    {
+      "date": -788950800000,
+      "value": 25.44
+    },
+    {
+      "date": -757409400000,
+      "value": 25.56
+    },
+    {
+      "date": -725873400000,
+      "value": 25.57
+    },
+    {
+      "date": -694337400000,
+      "value": 25.62
+    },
+    {
+      "date": -662716800000,
+      "value": 25.52
+    },
+    {
+      "date": -631180800000,
+      "value": 25.5
+    },
+    {
+      "date": -599643000000,
+      "value": 25.52
+    },
+    {
+      "date": -568107000000,
+      "value": 25.49
+    },
+    {
+      "date": -536484600000,
+      "value": 25.55
+    },
+    {
+      "date": -504948600000,
+      "value": 25.42
+    },
+    {
+      "date": -473412600000,
+      "value": 25.38
+    },
+    {
+      "date": -441876600000,
+      "value": 25.28
+    },
+    {
+      "date": -410254200000,
+      "value": 25.53
+    },
+    {
+      "date": -378718200000,
+      "value": 25.69
+    },
+    {
+      "date": -347182200000,
+      "value": 25.49
+    },
+    {
+      "date": -315646200000,
+      "value": 25.52
+    },
+    {
+      "date": -284023800000,
+      "value": 25.39
+    },
+    {
+      "date": -252487800000,
+      "value": 25.36
+    },
+    {
+      "date": -220951800000,
+      "value": 25.43
+    },
+    {
+      "date": -189414000000,
+      "value": 25.43
+    },
+    {
+      "date": -157791600000,
+      "value": 25.34
+    },
+    {
+      "date": -126255600000,
+      "value": 25.53
+    },
+    {
+      "date": -94719600000,
+      "value": 25.35
+    },
+    {
+      "date": -63183600000,
+      "value": 25.41
+    },
+    {
+      "date": -31561200000,
+      "value": 25.64
+    },
+    {
+      "date": -25200000,
+      "value": 25.58
+    },
+    {
+      "date": 31510800000,
+      "value": 25.35
+    },
+    {
+      "date": 63046800000,
+      "value": 25.6
+    },
+    {
+      "date": 94669200000,
+      "value": 25.76
+    },
+    {
+      "date": 126205200000,
+      "value": 25.41
+    },
+    {
+      "date": 157741200000,
+      "value": 25.44
+    },
+    {
+      "date": 189277200000,
+      "value": 25.26
+    },
+    {
+      "date": 220899600000,
+      "value": 25.4
+    },
+    {
+      "date": 252435600000,
+      "value": 25.49
+    },
+    {
+      "date": 283971600000,
+      "value": 25.6
+    },
+    {
+      "date": 315507600000,
+      "value": 25.6
+    },
+    {
+      "date": 347130000000,
+      "value": 25.68
+    },
+    {
+      "date": 378666000000,
+      "value": 25.61
+    },
+    {
+      "date": 410202000000,
+      "value": 25.81
+    },
+    {
+      "date": 441738000000,
+      "value": 25.32
+    },
+    {
+      "date": 473360400000,
+      "value": 25.56
+    },
+    {
+      "date": 504896400000,
+      "value": 25.65
+    },
+    {
+      "date": 536432400000,
+      "value": 25.88
+    },
+    {
+      "date": 567968400000,
+      "value": 25.77
+    },
+    {
+      "date": 599590800000,
+      "value": 25.62
+    },
+    {
+      "date": 631126800000,
+      "value": 25.85
+    },
+    {
+      "date": 662662800000,
+      "value": 25.79
+    },
+    {
+      "date": 694198800000,
+      "value": 25.79
+    },
+    {
+      "date": 725821200000,
+      "value": 25.75
+    },
+    {
+      "date": 757357200000,
+      "value": 25.78
+    },
+    {
+      "date": 788893200000,
+      "value": 25.82
+    },
+    {
+      "date": 820429200000,
+      "value": 25.82
+    },
+    {
+      "date": 852051600000,
+      "value": 25.93
+    },
+    {
+      "date": 883587600000,
+      "value": 26.18
+    },
+    {
+      "date": 915123600000,
+      "value": 25.77
+    },
+    {
+      "date": 946659600000,
+      "value": 25.85
+    },
+    {
+      "date": 978282000000,
+      "value": 25.91
+    },
+    {
+      "date": 1009818000000,
+      "value": 26.04
+    },
+    {
+      "date": 1041354000000,
+      "value": 25.9
+    },
+    {
+      "date": 1072890000000,
+      "value": 25.92
+    },
+    {
+      "date": 1104512400000,
+      "value": 25.93
+    },
+    {
+      "date": 1136048400000,
+      "value": 25.82
+    },
+    {
+      "date": 1167584400000,
+      "value": 25.84
+    },
+    {
+      "date": 1199120400000,
+      "value": 25.71
+    },
+    {
+      "date": 1230742800000,
+      "value": 25.98
+    },
+    {
+      "date": 1262278800000,
+      "value": 26.08
+    },
+    {
+      "date": 1293814800000,
+      "value": 25.88
+    },
+    {
+      "date": 1325350800000,
+      "value": 25.99
+    },
+    {
+      "date": 1356973200000,
+      "value": 26.05
+    },
+    {
+      "date": 1388509200000,
+      "value": 26.04
+    },
+    {
+      "date": 1420045200000,
+      "value": 26.12
+    },
+    {
+      "date": 1451581200000,
+      "value": 26.23
+    },
+    {
+      "date": 1483203600000,
+      "value": 26.03
+    },
+    {
+      "date": 1514739600000,
+      "value": 26.04
+    },
+    {
+      "date": 1546275600000,
+      "value": 26.2
+    },
+    {
+      "date": 1577811600000,
+      "value": 26.18
+    },
+    {
+      "date": 1609434000000,
+      "value": 25.99
+    }
+  ]
   series.data.setAll(data);
 
 
   // Make stuff animate on load
-  // https://www.amcharts.com/docs/v5/concepts/animations/
+  // 'value'://www.amcharts.com/docs/v5/concepts/animations/
   series.appear(1000);
   chart.appear(1000, 100);
 
-}); 
+});
 //rata ratu suhu indo perbulan
 
 am5.ready(function () {
 
   // Create root element
-  // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+  // 'value'://www.amcharts.com/docs/v5/getting-started/#Root_element
   var root = am5.Root.new("ratasuhuindoperbulan");
 
   root.dateFormatter.setAll({
@@ -488,229 +1024,229 @@ am5.ready(function () {
 
   // Data
   var data = [{
-      year: "1950",
-      value: 2
-    },
-    {
-      year: "1951",
-      value: 4
-    },
-    {
-      year: "1952",
-      value: 15
-    },
-    {
-      year: "1953",
-      value: 21
-    },
-    {
-      year: "1954",
-      value: 25
-    },
-    {
-      year: "1955",
-      value: 18
-    },
-    {
-      year: "1956",
-      value: 33
-    },
-    {
-      year: "1957",
-      value: 103
-    },
-    {
-      year: "1958",
-      value: 88
-    },
-    {
-      year: "1959",
-      value: 205
-    },
-    {
-      year: "1960",
-      value: 333
-    },
-    {
-      year: "1961",
-      value: 185
-    },
-    {
-      year: "1962",
-      value: 788
-    },
-    {
-      year: "1963",
-      value: 1020
-    },
-    {
-      year: "1964",
-      value: 658
-    },
-    {
-      year: "1965",
-      value: 201
-    },
-    {
-      year: "1966",
-      value: 1054
-    },
-    {
-      year: "1967",
-      value: 999
-    },
-    {
-      year: "1968",
-      value: 2002
-    },
-    {
-      year: "1969",
-      value: 2235
-    },
-    {
-      year: "1970",
-      value: 1423
-    },
-    {
-      year: "1971",
-      value: 3564
-    },
-    {
-      year: "1972",
-      value: 3987
-    },
-    {
-      year: "1973",
-      value: 4235
-    },
-    {
-      year: "1974",
-      value: 3487
-    },
-    {
-      year: "1975",
-      value: 2987
-    },
-    {
-      year: "1976",
-      value: 6789
-    },
-    {
-      year: "1977",
-      value: 7354
-    },
-    {
-      year: "1978",
-      value: 5457
-    },
-    {
-      year: "1979",
-      value: 6784
-    },
-    {
-      year: "1980",
-      value: 7878
-    },
-    {
-      year: "1981",
-      value: 6987
-    },
-    {
-      year: "1982",
-      value: 5787
-    },
-    {
-      year: "1983",
-      value: 8978
-    },
-    {
-      year: "1984",
-      value: 10003
-    },
-    {
-      year: "1985",
-      value: 7898
-    },
-    {
-      year: "1986",
-      value: 9878
-    },
-    {
-      year: "1987",
-      value: 11235
-    },
-    {
-      year: "1988",
-      value: 10248
-    },
-    {
-      year: "1989",
-      value: 14589
-    },
-    {
-      year: "1990",
-      value: 19878
-    },
-    {
-      year: "1991",
-      value: 20325
-    },
-    {
-      year: "1992",
-      value: 18978
-    },
-    {
-      year: "1993",
-      value: 17485
-    },
-    {
-      year: "1994",
-      value: 15234
-    },
-    {
-      year: "1995",
-      value: 12345
-    },
-    {
-      year: "1996",
-      value: 12584
-    },
-    {
-      year: "1997",
-      value: 13698
-    },
-    {
-      year: "1998",
-      value: 12568
-    },
-    {
-      year: "1999",
-      value: 12587
-    },
-    {
-      year: "2000",
-      value: 16987
-    },
-    {
-      year: "2001",
-      value: 16779
-    },
-    {
-      year: "2002",
-      value: 19878
-    },
-    {
-      year: "2003",
-      value: 15687
-    },
-    {
-      year: "2004",
-      value: 19878
-    },
-    {
-      year: "2005",
-      value: 23212
-    }
+    year: "1950",
+    value: 2
+  },
+  {
+    year: "1951",
+    value: 4
+  },
+  {
+    year: "1952",
+    value: 15
+  },
+  {
+    year: "1953",
+    value: 21
+  },
+  {
+    year: "1954",
+    value: 25
+  },
+  {
+    year: "1955",
+    value: 18
+  },
+  {
+    year: "1956",
+    value: 33
+  },
+  {
+    year: "1957",
+    value: 103
+  },
+  {
+    year: "1958",
+    value: 88
+  },
+  {
+    year: "1959",
+    value: 205
+  },
+  {
+    year: "1960",
+    value: 333
+  },
+  {
+    year: "1961",
+    value: 185
+  },
+  {
+    year: "1962",
+    value: 788
+  },
+  {
+    year: "1963",
+    value: 1020
+  },
+  {
+    year: "1964",
+    value: 658
+  },
+  {
+    year: "1965",
+    value: 201
+  },
+  {
+    year: "1966",
+    value: 1054
+  },
+  {
+    year: "1967",
+    value: 999
+  },
+  {
+    year: "1968",
+    value: 2002
+  },
+  {
+    year: "1969",
+    value: 2235
+  },
+  {
+    year: "1970",
+    value: 1423
+  },
+  {
+    year: "1971",
+    value: 3564
+  },
+  {
+    year: "1972",
+    value: 3987
+  },
+  {
+    year: "1973",
+    value: 4235
+  },
+  {
+    year: "1974",
+    value: 3487
+  },
+  {
+    year: "1975",
+    value: 2987
+  },
+  {
+    year: "1976",
+    value: 6789
+  },
+  {
+    year: "1977",
+    value: 7354
+  },
+  {
+    year: "1978",
+    value: 5457
+  },
+  {
+    year: "1979",
+    value: 6784
+  },
+  {
+    year: "1980",
+    value: 7878
+  },
+  {
+    year: "1981",
+    value: 6987
+  },
+  {
+    year: "1982",
+    value: 5787
+  },
+  {
+    year: "1983",
+    value: 8978
+  },
+  {
+    year: "1984",
+    value: 10003
+  },
+  {
+    year: "1985",
+    value: 7898
+  },
+  {
+    year: "1986",
+    value: 9878
+  },
+  {
+    year: "1987",
+    value: 11235
+  },
+  {
+    year: "1988",
+    value: 10248
+  },
+  {
+    year: "1989",
+    value: 14589
+  },
+  {
+    year: "1990",
+    value: 19878
+  },
+  {
+    year: "1991",
+    value: 20325
+  },
+  {
+    year: "1992",
+    value: 18978
+  },
+  {
+    year: "1993",
+    value: 17485
+  },
+  {
+    year: "1994",
+    value: 15234
+  },
+  {
+    year: "1995",
+    value: 12345
+  },
+  {
+    year: "1996",
+    value: 12584
+  },
+  {
+    year: "1997",
+    value: 13698
+  },
+  {
+    year: "1998",
+    value: 12568
+  },
+  {
+    year: "1999",
+    value: 12587
+  },
+  {
+    year: "2000",
+    value: 16987
+  },
+  {
+    year: "2001",
+    value: 16779
+  },
+  {
+    year: "2002",
+    value: 19878
+  },
+  {
+    year: "2003",
+    value: 15687
+  },
+  {
+    year: "2004",
+    value: 19878
+  },
+  {
+    year: "2005",
+    value: 23212
+  }
   ];
 
   // Create axes
@@ -773,111 +1309,28 @@ am5.ready(function () {
 
 am5.ready(function () {
 
-  var data = [{
-    "date": "2012-01-01",
-    "distance": 227,
-    "townName": "New York",
-    "townSize": 12,
-    "latitude": 40.71,
-    "duration": 408
-  }, {
-    "date": "2012-01-02",
-    "distance": 371,
-    "townName": "Washington",
-    "townSize": 7,
-    "latitude": 38.89,
-    "duration": 482
-  }, {
-    "date": "2012-01-03",
-    "distance": 433,
-    "townName": "Wilmington",
-    "townSize": 3,
-    "latitude": 34.22,
-    "duration": 562
-  }, {
-    "date": "2012-01-04",
-    "distance": 345,
-    "townName": "Jacksonville",
-    "townSize": 3.5,
-    "latitude": 30.35,
-    "duration": 379
-  }, {
-    "date": "2012-01-05",
-    "distance": 480,
-    "townName": "Miami",
-    "townSize": 5,
-    "latitude": 25.83,
-    "duration": 501
-  }, {
-    "date": "2012-01-06",
-    "distance": 386,
-    "townName": "Tallahassee",
-    "townSize": 3.5,
-    "latitude": 30.46,
-    "duration": 443
-  }, {
-    "date": "2012-01-07",
-    "distance": 348,
-    "townName": "New Orleans",
-    "townSize": 5,
-    "latitude": 29.94,
-    "duration": 405
-  }, {
-    "date": "2012-01-08",
-    "distance": 238,
-    "townName": "Houston",
-    "townSize": 8,
-    "latitude": 29.76,
-    "duration": 309
-  }, {
-    "date": "2012-01-09",
-    "distance": 218,
-    "townName": "Dalas",
-    "townSize": 8,
-    "latitude": 32.8,
-    "duration": 287
-  }, {
-    "date": "2012-01-10",
-    "distance": 349,
-    "townName": "Oklahoma City",
-    "townSize": 5,
-    "latitude": 35.49,
-    "duration": 485
-  }, {
-    "date": "2012-01-11",
-    "distance": 603,
-    "townName": "Kansas City",
-    "townSize": 5,
-    "latitude": 39.1,
-    "duration": 890
-  }, {
-    "date": "2012-01-12",
-    "distance": 534,
-    "townName": "Denver",
-    "townSize": 9,
-    "latitude": 39.74,
-    "duration": 810
-  }, {
-    "date": "2012-01-13",
-    "townName": "Salt Lake City",
-    "townSize": 6,
-    "distance": 425,
-    "duration": 670,
-    "latitude": 40.75,
-    "dashLength": 8,
-    "alpha": 0.4
-  }, {
-    "date": "2012-01-14",
-    "latitude": 36.1,
-    "duration": 470,
-    "townName": "Las Vegas"
-  }, {
-    "date": "2012-01-15"
-  }, {
-    "date": "2012-01-16"
-  }, {
-    "date": "2012-01-17"
-  }];
+  var data = [{ 'date': '2000', 'curahHujan': 2935.1, 'suhuMin': 21.29, 'suhuMax': 30.46 },
+  { 'date': '2001', 'curahHujan': 2877.01, 'suhuMin': 21.37, 'suhuMax': 30.5 },
+  { 'date': '2002', 'curahHujan': 2596.6, 'suhuMin': 21.43, 'suhuMax': 30.7 },
+  { 'date': '2003', 'curahHujan': 2890.05, 'suhuMin': 21.33, 'suhuMax': 30.52 },
+  { 'date': '2004', 'curahHujan': 2638.79, 'suhuMin': 21.33, 'suhuMax': 30.55 },
+  { 'date': '2005', 'curahHujan': 2743.29, 'suhuMin': 21.4, 'suhuMax': 30.51 },
+  { 'date': '2006', 'curahHujan': 2651.61, 'suhuMin': 21.26, 'suhuMax': 30.43 },
+  { 'date': '2007', 'curahHujan': 2869.1, 'suhuMin': 21.38, 'suhuMax': 30.34 },
+  { 'date': '2008', 'curahHujan': 3012.77, 'suhuMin': 21.24, 'suhuMax': 30.23 },
+  { 'date': '2009', 'curahHujan': 2775.49, 'suhuMin': 21.5, 'suhuMax': 30.51 },
+  { 'date': '2010', 'curahHujan': 3289.37, 'suhuMin': 21.67, 'suhuMax': 30.54 },
+  { 'date': '2011', 'curahHujan': 2908.97, 'suhuMin': 21.44, 'suhuMax': 30.37 },
+  { 'date': '2012', 'curahHujan': 2866.86, 'suhuMin': 21.51, 'suhuMax': 30.52 },
+  { 'date': '2013', 'curahHujan': 2908.12, 'suhuMin': 21.57, 'suhuMax': 30.58 },
+  { 'date': '2014', 'curahHujan': 2601.32, 'suhuMin': 21.53, 'suhuMax': 30.59 },
+  { 'date': '2015', 'curahHujan': 2482.19, 'suhuMin': 21.62, 'suhuMax': 30.67 },
+  { 'date': '2016', 'curahHujan': 2947.5, 'suhuMin': 21.79, 'suhuMax': 30.71 },
+  { 'date': '2017', 'curahHujan': 3017.2, 'suhuMin': 21.54, 'suhuMax': 30.57 },
+  { 'date': '2018', 'curahHujan': 2823.96, 'suhuMin': 21.46, 'suhuMax': 30.67 },
+  { 'date': '2019', 'curahHujan': 2512.99, 'suhuMin': 21.64, 'suhuMax': 30.8 },
+  { 'date': '2020', 'curahHujan': 2999.83, 'suhuMin': 21.65, 'suhuMax': 30.77 },
+  { 'date': '2021', 'curahHujan': 3087.72, 'suhuMin': 21.44, 'suhuMax': 30.59 }]
 
   // Create root element
   // https://www.amcharts.com/docs/v5/getting-started/#Root_element
@@ -945,10 +1398,10 @@ am5.ready(function () {
   var distanceSeries = chart.series.push(am5xy.ColumnSeries.new(root, {
     xAxis: xAxis,
     yAxis: distanceAxis,
-    valueYField: "distance",
+    valueYField: "curahHujan",
     valueXField: "date",
     tooltip: am5.Tooltip.new(root, {
-      labelText: "{valueY} miles"
+      labelText: "{valueY}%"
     })
   }));
 
@@ -960,10 +1413,10 @@ am5.ready(function () {
   var latitudeSeries = chart.series.push(am5xy.LineSeries.new(root, {
     xAxis: xAxis,
     yAxis: latitudeAxis,
-    valueYField: "latitude",
+    valueYField: "suhuMin",
     valueXField: "date",
     tooltip: am5.Tooltip.new(root, {
-      labelText: "latitude: {valueY} ({townName})"
+      labelText: "suhu min: {valueY} ({townName})"
     })
   }));
 
@@ -993,10 +1446,10 @@ am5.ready(function () {
   var durationSeries = chart.series.push(am5xy.LineSeries.new(root, {
     xAxis: xAxis,
     yAxis: durationAxis,
-    valueYField: "duration",
+    valueYField: "suhuMax",
     valueXField: "date",
     tooltip: am5.Tooltip.new(root, {
-      labelText: "duration: {valueY.formatDuration()}"
+      labelText: "suhu max: {valueY.formatDuration()}"
     })
   }));
 
