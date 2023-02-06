@@ -8,9 +8,8 @@
 - [x] Description Cells
 - [x] Answers
 - [x] Solution
-- [ ] Visualization (Web)
+- [x] Visualization (Web)
 - [ ] Power Point
 
 ## On Progress
-- Visualization (Web)
 - Power Point
