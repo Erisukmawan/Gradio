@@ -204,43 +204,55 @@ am5.ready(function () {
     chart.set("scrollbarX", am5.Scrollbar.new(root, {
         orientation: "horizontal"
     }));
-
+    chart.get("colors").set("colors", [
+          am5.color(0x095256),
+          am5.color(0x087f1),
+          am5.color(0x5aaa95),
+          am5.color(0x86a873),
+          am5.color(0xbb9f06)
+    ]);
     var data = [{
         "year": "2015",
         "mobil": 12304221,
         "bis": 196309,
         "mobil barang": 4145857,
         "motor": 88656931,
+        "color": "#fff",
     }, {
         "year": "2016",
         "mobil": 13142958,
         "bis": 204512,
         "mobil barang": 4326731,
         "motor": 94531510,
+        "color": "#fff",
     }, {
         "year": "2017",
         "mobil": 13968202,
         "bis": 213359,
         "mobil barang": 4540902,
         "motor": 100200245,
+        "color": "#fff",
     }, {
         "year": "2018",
         "mobil": 14830698,
         "bis": 222872,
         "mobil barang": 4797254,
         "motor": 106657952,
+        "color": "#fff",
     }, {
         "year": "2019",
         "mobil": 15592419,
         "bis": 231569,
         "mobil barang": 5021888,
         "motor": 112771136,
+        "color": "#fff",
     }, {
         "year": "2020",
         "mobil": 15797746,
         "bis": 233261,
         "mobil barang": 5083405,
         "motor": 115023039,
+        "color": "#08213",
     }]
 
 
@@ -284,12 +296,14 @@ am5.ready(function () {
             xAxis: xAxis,
             yAxis: yAxis,
             valueYField: fieldName,
-            categoryXField: "year"
+            categoryXField: "year",
+            gridColor: "#FFFFFF"
         }));
 
         series.columns.template.setAll({
             tooltipText: "{name}, {categoryX}: {valueY}",
-            tooltipY: am5.percent(10)
+            tooltipY: am5.percent(10),
+            // color: "{color}",
         });
         series.data.setAll(data);
 

@@ -83,7 +83,7 @@ am5.ready(function () {
     cornerRadiusTR: 10,
     strokeOpacity: 0
   });
-  columnTemplate.adapters.add("fill", (fill, target) => {
+  columnTemplate.adapters.add(am5.color(0x337ade), (fill, target) => {
     return chart.get("colors").getIndex(series.columns.indexOf(target));
   });
 
@@ -130,44 +130,6 @@ am5.ready(function () {
         var fy =
           yRenderer.positionToCoordinate(yAxis.indexToPosition(index)) -
           column.height() / 2;
-
-        // set index to be the same as series data item index
-        if (index != dataItem.get("index")) {
-          dataItem.set("index", index);
-
-          // current position
-          var x = column.x();
-          var y = column.y();
-
-          column.set("dy", -(fy - y));
-          column.set("dx", x);
-
-          column.animate({
-            key: "dy",
-            to: 0,
-            duration: 600,
-            easing: easing
-          });
-          column.animate({
-            key: "dx",
-            to: 0,
-            duration: 600,
-            easing: easing
-          });
-        } else {
-          column.animate({
-            key: "y",
-            to: fy,
-            duration: 600,
-            easing: easing
-          });
-          column.animate({
-            key: "x",
-            to: 0,
-            duration: 600,
-            easing: easing
-          });
-        }
       }
     });
 
@@ -182,7 +144,7 @@ am5.ready(function () {
   // Set data
   var data = [{
     country: "DKI Jakarta",
-    value: 28.04
+    value: 28.04,
   }, {
     country: "Riau",
     value: 27.84
@@ -1348,9 +1310,21 @@ am5.ready(function () {
   var chart = root.container.children.push(am5xy.XYChart.new(root, {
     panX: false,
     panY: false,
-    wheelY: "none"
+    wheelY: "none",
+    layout: root.verticalLayout,
+    
   }));
-
+  // chart.addLegend(legend, true);
+  var legend = chart.children.push(
+    am5.Legend.new(root, {
+      x: am5.percent(33),
+      centerx: am5.percent(100),
+      y: am5.percent(95),
+      centery: am5.percent(100),
+      nameField: "valueYField"
+    })
+  );
+  
   chart.zoomOutButton.set("forceHidden", true);
 
   chart.get("colors").set("step", 2);
@@ -1485,6 +1459,7 @@ am5.ready(function () {
   latitudeSeries.data.setAll(data);
   durationSeries.data.setAll(data);
   xAxis.data.setAll(data);
+  legend.data.setAll(chart.series.values);
 
   // Make stuff animate on load
   // https://www.amcharts.com/docs/v5/concepts/animations/
