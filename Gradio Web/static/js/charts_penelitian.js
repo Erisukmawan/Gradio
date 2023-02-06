@@ -300,7 +300,7 @@ am5.ready(function () {
         series.bullets.push(function () {
             return am5.Bullet.new(root, {
                 sprite: am5.Label.new(root, {
-                    text: "{valueY}",
+                    // text: "{valueY}",
                     fill: root.interfaceColors.get("alternativeText"),
                     centerY: am5.p50,
                     centerX: am5.p50,
