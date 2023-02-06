@@ -21,7 +21,8 @@ var chart = root.container.children.push(am5map.MapChart.new(root, {
 var polygonSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {
   geoJSON: am5geodata_indonesiaLow,
   valueField: "value",
-  calculateAggregates: true
+  calculateAggregates: true,
+  exclude: ['ID-YO', 'MY-13', 'MY-12', 'TL', 'BN']
 }));
 
 polygonSeries.mapPolygons.template.setAll({
@@ -78,10 +79,10 @@ polygonSeries.data.setAll([
 
 var heatLegend = chart.children.push(am5.HeatLegend.new(root, {
   orientation: "vertical",
-  startColor: am5.color(0xff621f),
-  endColor: am5.color(0x661f00),
-  startText: "Lowest",
-  endText: "Highest",
+  startColor: am5.color(0x337ade),
+  endColor: am5.color(0xf70505),
+  startText: "Terendah",
+  endText: "Tertinggi",
   stepCount: 5
 }));
 
