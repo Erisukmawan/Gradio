@@ -9,7 +9,5 @@
 - [x] Answers
 - [x] Solution
 - [x] Visualization (Web)
-- [ ] Power Point
-
-## On Progress
-- Power Point
+- ~~[ ] Power Point~~
+- [x] Research Result for Presentation (web)
