@@ -14,7 +14,83 @@
     <!-- End plugin css for this page -->
     <!-- inject:css -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/w3.css" />
     <!-- endinject -->
+    <link rel="stylesheet" href="assets/atropos/atropos.css">
+    <link rel="stylesheet" href="">
+    <style>
+        .my-atropos {
+            width: 800px;
+            display: inline-block;
+        }
+
+        #title-img {
+            width: 80%;
+        }
+
+        #title-text {
+            margin-top: -668px;
+            width: 70%;
+        }
+
+        #title-logo {
+            top: 372px;
+            right: 634px;
+            width: 65px;
+            position: absolute;
+        }
+
+        #title-scroll {
+            position: absolute;
+            top: 196px;
+            right: 352px;
+            width: 82px;
+        }
+
+        [data-scene] {
+            max-width: 800px;
+            padding: 10vh 50px;
+            margin: 10vh auto;
+            font-family: sans-serif;
+            font-size: 100px;
+            color: #fff;
+            text-align: center;
+            background: linear-gradient(to top, rgb(252, 92, 125), rgb(106, 130, 251));
+            border-radius: 5px;
+        }
+
+        [data-scene]:first-child {
+            background: linear-gradient(to bottom, rgb(168, 192, 255), rgb(63, 43, 150));
+        }
+
+        [data-scene]:last-child {
+            margin-bottom: 50vh;
+        }
+
+        .fz10 {
+            font-size: 10px;
+        }
+
+        .fz18 {
+            font-size: 18px;
+        }
+
+        .fz20 {
+            font-size: 20px;
+        }
+
+        .fz25 {
+            font-size: 25px;
+        }
+
+        .fz30 {
+            font-size: 30px;
+        }
+
+        .fz40 {
+            font-size: 40px;
+        }
+    </style>
     <link rel="shortcut icon" href="images/mini logo.png" />
 </head>
 
@@ -22,7 +98,8 @@
     <!-- partial:partials/_horizontal-navbar.html -->
     <div class="horizontal-menu">
         <nav class="navbar top-navbar col-lg-12 col-12 p-0">
-            <div class="container-fluid">
+            <div class="container-fluid my-paroller" data-paroller-factor="0.3" data-paroller-type="foreground"
+                data-paroller-direction="horizontal">
                 <div class="navbar-menu-wrapper d-flex align-items-center justify-content-between">
                     <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
                         <a class="navbar-brand brand-logo" href="/"><img src="images/LOGO GRADIO GLOBAL.png"
@@ -74,41 +151,192 @@
                 <div class="content-wrapper">
                     <div class="row">
                         <!-- ELEMEN ARTIKEL -->
-                        <div class="col-lg-12 grid-margin stretch-card">
-                            <div class="card bg-primary">
-                                <div class="card-body">
-                                    <h3 class="text-center text-white"><strong>Penyebab Perubahan Iklim</strong></h3>
+                        <!-- Title Start -->
+                        <!-- main Atropos container (required), add your custom class here -->
+                        <div class="text-center">
+                            <div class="atropos my-atropos">
+                                <div class="atropos-scale">
+                                    <div class="atropos-rotate">
+                                        <div class="atropos-inner">
+                                            <img class="ukiyo" data-atropos-offset="0"
+                                                src="images/research/polution.jpg" alt="polution" id="title-img">
+                                            <img data-atropos-offset="1" src="images/research/title-text.png"
+                                                id="title-text">
+                                            <img data-atropos-offset="2" src="images/mini logo.png" id="title-logo">
+                                            <img data-atropos-offset="4" src="images/research/scroll-down.png"
+                                                id="title-scroll">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- Title End -->
+                        <hr>
+                        <!-- Dampak -->
+                        <div class="col-lg-6 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h1>Global Warming</h1>
+                                    <img class="w3-animate-left" src="images/research/forest1.jpg" width="100%">
+                                    <div class="row">
+                                        <!-- <span>Adalah suatu fenomena dimana terjadi peningkatan suhu di atmosfer dan
+                                            permukaan bumi (suhu global).
+                                        </span> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body" style="margin: 88px">
+                                    <div class="row">
+                                        <h2 style="font-size: 40px; font-weight: bold;">Dampak Global Warming</h2>
+                                        <ul>
+                                            <li class="fz30">
+                                                Suhu lebih Panas
+                                            </li>
+                                            <li class="fz30">
+                                                Curah hujan lebih tinggi
+                                            </li>
+                                            <li class="fz30">
+                                                Kekeringan
+                                            </li>
+                                            <li class="fz30">
+                                                Kenaikan suhu dan tinggi air laut
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Foto dampak -->
+                        <hr>
+                        <div class="col-lg-12 grid-margin stretch-card">
+                            <div class="card">
+                                <h4 class="card-title text-center">Foto-foto dampak global warming</h4>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-6 grid-margin stretch-card">
+                                            <img class="w3-animate-bottom" src="images/research/dampak1.png"
+                                                width="100%">
+                                        </div>
+                                        <div class="col-lg-6 grid-margin stretch-card">
+                                            <img class="w3-animate-top" src="images/research/dampak2.png" width="100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Penyebab -->
+                        <hr>
+                        <div class="col-lg-12 grid-margin stretch-card">
+                            <div class="card">
+                                <h4 class="card-title text-center">Penyebab global warming</h4>
+                                <div class="card-body text-center">
+                                    <div class="atropos my-atropos2">
+                                        <div class="atropos-scale">
+                                            <div class="atropos-rotate">
+                                                <div class="atropos-inner">
+                                                    <img data-atropos-offset="0" src="images/research/penyebab1.png"
+                                                        id="title-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Faktor Faktor -->
+                        <hr>
+                        <div class="col-lg-6 grid-margin stretch-card">
+                            <div class="card">
+                                <h4 class="card-title text-center" style="font-size: 30px !important;">Beberapa dampak
+                                    global warming diantaranya perubahan
+                                    suhu udara yang signifikan</h4>
+                                <div class="card-body text-center fz25">
+                                    <code>
+                                        "Suhu bumi telah meningkat rata-rata 0,14° Fahrenheit (0,08° Celcius) per dekade
+                                        sejak tahun 1880, atau sekitar 2° F secara keseluruhan.
+                                        Laju pemanasan sejak tahun 1981 lebih dari dua kali lebih cepat: 0,32° F (0,18°
+                                        C) per dekade."
+
+                                        -,NOAA
+
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 grid-margin stretch-card">
+                            <div class="card">
+                                <h4 class="card-title text-center">Perubahan suhu</h4>
+                                <div class="card-body text-center">
+                                    <img src="images/research/nasa_real.gif" width="100%">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Faktor lain -->
+                        <hr>
+                        <div class="col-lg-12 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Perkembangan Gas Penyebab Greenhouse Effect
+                                        Setiap Tahunnya<br>Seiring Dengan Semakin Banyaknya Penggunaan Energi Dan
+                                        Tambang</h4>
+                                    <div id="gas"></div>
+                                    <p class="mt-3 mb-4 mb-lg-0">
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Faktor suhu -->
+                        <hr>
+                        <div class="col-lg-12 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title text-center">Riau Memiliki Suhu Tertinggi Hingga Hampir
+                                        Mencapai 28 ° Celcius</h4>
+                                    <img src="images/research/suhu1.png">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Foto Faktor suhu -->
+                        <hr>
+                        <div class="col-lg-12 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Dampak yang disebabkan oleh tingginya suhu</h4>
+                                    <div class="row">
+                                        <div class="col-lg-6 grid-margin stretch-card">
+                                            <img src="images/research/dampaksuhu1.png" width="100%">
+                                        </div>
+                                        <div class="col-lg-6 grid-margin stretch-card">
+                                            <img src="images/research/dampaksuhu2.png" width="100%">
+                                        </div>
+                                    </div>
+                                    <p class="mt-3 mb-4 mb-lg-0">
+                                        Dampak dari kondisi panas tersebut berpotensi menyebabkan kebakaran lahan dan
+                                        hutan,
+                                        ini pernah terjadi di kota Riau dengan kabut asap tebal pada tahun 2013
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Populasi -->
+                        <hr>
                         <div class="col-lg-12 grid-margin stretch-card">
                             <div class="card">
                                 <div class="card-body">
                                     <h4 class="card-title text-center">Jumlah Populasi Di Indonesia Pada Tahun 2020</h4>
-                                    <div id="populasi"></div>
+                                    <div id="populasi" class="ukiyo"></div>
                                     <p class="mt-3 mb-4 mb-lg-0">
                                         Indonesia Menempati Posisi Pertama
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="row"> -->
-                        <div class="col-lg-6 grid-margin stretch-card">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Perkembangan Penggunaan Listrik Dalam Satuan % Di
-                                        Indonesia</h4>
-                                    <div id="listrik"></div>
-                                    <p class="mt-3 mb-4 mb-lg-0">
-                                        Berdasarkan data pada tahun 2020, hampir 97% dari populasi rakyat Indonesia
-                                        telah menggunakan listrik. Ini berarti ada sekitar 264 juta rakyat Indonesia
-                                        yang telah menggunakan listrik.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- </div> -->
-                        <div class="col-lg-6 grid-margin stretch-card">
+                        <!-- Presentasi kendaraan bermotor -->
+                        <div class="col-lg-12 grid-margin stretch-card">
                             <div class="card">
                                 <div class="card-body">
                                     <h4 class="card-title text-center">Pada Tahun 2020, hampir 50% penduduk Indonesia
@@ -124,19 +352,56 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Listrik -->
+                        <hr>
                         <div class="col-lg-12 grid-margin stretch-card">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="card-title text-center">Perkembangan Gas Penyebab Greenhouse Effect
-                                        Setiap Tahunnya<br>Seiring Dengan Semakin Banyaknya Penggunaan Energi Dan
-                                        Tambang</h4>
-                                    <div id="gas"></div>
+                                    <h4 class="card-title text-center">Perkembangan Penggunaan Listrik Dalam Satuan % Di
+                                        Indonesia</h4>
+                                    <div id="listrik"></div>
                                     <p class="mt-3 mb-4 mb-lg-0">
-
+                                        Berdasarkan data pada tahun 2020, hampir 97% dari populasi rakyat Indonesia
+                                        telah menggunakan listrik. Ini berarti ada sekitar 264 juta rakyat Indonesia
+                                        yang telah menggunakan listrik.
                                     </p>
                                 </div>
                             </div>
                         </div>
+                        <!-- Solusi -->
+                        <hr>
+                        <div class="col-lg-12 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Hal yang dapat dilakukan untuk menanggulangi
+                                        pemanasan global</h4>
+                                    <div class="row">
+                                        <div class="col-lg-4 grid-margin stretch-card">
+                                            <div class="card-body text-center">
+                                                <h4 class="card-title text-center">Pengurangan Kendaraan Pribadi dan Gunakan Sepeda atau Kendaraan Umum</h4>
+                                                <img src="images/research/car.png" width="50%" style="margin-top: 79px">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 grid-margin stretch-card">
+                                            <div class="card-body text-center">
+                                                <h4 class="card-title text-center">Menggunakan Barang Hemat Energi</h4>
+                                                <img src="images/research/lamp.png" width="50%">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 grid-margin stretch-card">
+                                            <div class="card-body text-center">
+                                                <h4 class="card-title text-center">Menanam Pohon dan ikut program pecinta alam</h4>
+                                                <img src="images/research/tree.png" width="50%" style="margin-top: 57px;">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 grid-margin stretch-card"></div>
+                                        <div class="col-lg-4 grid-margin stretch-card"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Prediksi tinggi air laut -->
+                        <hr>
                         <div class="col-lg-12 grid-margin stretch-card">
                             <div class="card">
                                 <div class="card-body">
@@ -144,7 +409,8 @@
                                     <div class="row">
                                         <div class="col-lg-6 grid-margin stretch-card">
                                             <div class="card-body">
-                                                <h4 class="card-title text-center">Tinggi Air Laut Dari Tahun 1880 Hingga 2003 (inci)</h4>
+                                                <h4 class="card-title text-center">Tinggi Air Laut Dari Tahun 1880
+                                                    Hingga 2003 (inci)</h4>
                                                 <div id="perkembanganketinggianlaut"></div>
                                                 <p class="mt-3 mb-4 mb-lg-0">
 
@@ -152,14 +418,15 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-6 grid-margin stretch-card">
-                                                <div class="card-body">
-                                                    <h4 class="card-title text-center">Prediksi Ketinggian Air Laut Dari Tahun 2013 Hingga 2050</h4>
-                                                    <div id="prediksilaut"></div>
-                                                    <p class="mt-3 mb-4 mb-lg-0">
-                                                        
-                                                    </p>
-                                                </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title text-center">Prediksi Ketinggian Air Laut Dari
+                                                    Tahun 2013 Hingga 2050</h4>
+                                                <div id="prediksilaut"></div>
+                                                <p class="mt-3 mb-4 mb-lg-0">
+
+                                                </p>
                                             </div>
+                                        </div>
                                         <!-- End -->
                                     </div>
                                 </div>
@@ -207,6 +474,18 @@
     <!-- Custom js for this page-->
     <script src="js/dashboard.js"></script>
     <script src="js/charts_penelitian.js"></script>
+    <script src="assets/atropos/atropos.min.js"></script>
+    <script>
+        const myAtropos = Atropos({
+            el: '.my-atropos',
+            shadow: false
+        });
+        const myAtropos2 = Atropos({
+            el: '.my-atropos2',
+            shadow: false
+        });
+    </script>
+    <script src="assets/jquery/dist/jquery.min.js"></script>
     <!-- End custom js for this page-->
 </body>
 

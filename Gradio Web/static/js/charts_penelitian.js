@@ -655,7 +655,7 @@ am5.ready(function () {
 
     // Add series
     // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
-    let kolom = ['Nitro', 'Karbon', 'Metana']
+    let kolom = ['Nitro Okdisa (6%)', 'Karbon (76%)', 'Metana (16%)']
     let nitro = [
         {
             "date": 1451581200000,
@@ -885,17 +885,17 @@ am5.ready(function () {
         date.setHours(0, 0, 0, 0);
         value = 0;
 
-        if (nama.toLowerCase() == 'nitro') {
+        if (nama.toLowerCase().includes('nitro')) {
             var data = nitro;
             series.data.setAll(data);
         }
 
-        if (nama.toLowerCase() == 'karbon') {
+        if (nama.toLowerCase().includes('karbon')) {
             var data = karbon;
             series.data.setAll(data);
         }
 
-        if (nama.toLowerCase() == 'metana') {
+        if (nama.toLowerCase().includes('metana')) {
             var data = metana;
             series.data.setAll(data);
         }
