@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Visualisasi - Team Gradio</title>
+  <!-- base:css -->
+  <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css" />
+  <link rel="stylesheet" href="vendors/base/vendor.bundle.base.css" />
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- endinject -->
+  <link rel="shortcut icon" href="assets/images/mini logo.png" />
+</head>
+
+<body>
+  <!-- partial:partials/_horizontal-navbar.html -->
+  <div class="horizontal-menu">
+    <nav class="navbar top-navbar col-lg-12 col-12 p-0">
+      <div class="container-fluid">
+        <div class="navbar-menu-wrapper d-flex align-items-center justify-content-between">
+          <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+            <a class="navbar-brand brand-logo" href="/"><img src="/assets/images/LOGO GRADIO GLOBAL.png"
+                alt="logo" /></a>
+            <a class="navbar-brand brand-logo-mini" href="/"><img src="/assets/images/LOGO GRADIO GLOBAL.png"
+                alt="logo" /></a>
+          </div>
+          <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item dropdown d-lg-flex d-none">
+              <a class="btn btn-inverse-primary" href="/pages/about.html"><i
+                  class="mdi mdi-information-variant"></i>About Us</a>
+            </li>
+          </ul>
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+            data-toggle="horizontal-menu-toggle">
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <nav class="bottom-navbar">
+      <div class="container">
+        <ul class="nav page-navigation">
+          <li class="nav-item active">
+            <a href="/" target="_parent" class="nav-link">
+              <i class="mdi mdi-weather-lightning menu-icon"></i>
+              <span class="menu-title">Iklim & Suhu</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/penelitian.html" target="_parent" class="nav-link">
+              <i class="mdi mdi-blur-radial menu-icon"></i>
+              <span class="menu-title">Penelitian Perkembangan Iklim</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/radar.html" target="_parent" class="nav-link">
+              <i class="mdi mdi-map-legend menu-icon"></i>
+              <span class="menu-title">Peta Radar</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- partial -->
+  <div class="container-fluid page-body-wrapper">
+    <div class="main-panel">
+      <div class="row mt-lg-auto">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card bg-light text-white" style="border-radius: 40px">
+                  <div class="bg-image" style="border-radius: 35px; background-color: rgba(15, 15, 15, 0.5)">
+                    <img id="weather-img" src="assets/images/weather/clear.gif" style="height: 409px" class="card-img"
+                      alt="weather" />
+                    <div class="mask" style="background-color: rgba(15, 15, 15, 0.5)"></div>
+                  </div>
+                  <div class="card-img-overlay text-dark p-5 col-lg-6">
+                    <h4 id="wrapper-loc" class="mb-0 mdi mdi-map-marker-circle shadow-bright"></h4>
+                    <p id="wrapper-temp" class="display-2 my-3 shadow-bright"></p>
+                    <h5> <span id="wrapper-condition" class="mdi mdi-cloud shadow-bright" alt="weather"></span></h5>
+                    <br>
+                    <h5> <span id="wrapper-pressure" class="mdi mdi-cloud shadow-bright" alt="weather"></span></h5>
+                    <h5> <span id="wrapper-humidity" class="mdi mdi-cloud shadow-bright" alt="weather"></span></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card card-border">
+                <div class="card-body">
+                  <h4 class="card-title text-center">Persebaran Suhu Rata-Rata Indonesia Tahun 2016</h4>
+                  <div id="mapindo"></div>
+                  <p class="mt-3 mb-4 mb-lg-0">
+                    <b></b>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <h4 class="card-title text-center">Persentase suhu naik dan turun</h4>
+                      <div class="card-body">
+                        <div class="table-responsive pt-3" style="max-height: 300px;">
+                          <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th>#</th>
+                                <th>Tahun</th>
+                                <th>Suhu</th>
+                                <th>Persentase Naik Turun</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th>0</th>
+                                <td>1901</td>
+                                <td>25.40</td>
+                                <td>0%</td>
+                              </tr>
+                              <tr>
+
+                                <th>1</th>
+                                <td>1902</td>
+                                <td>25.37</td>
+                                <td>-0.00118%</td>
+                              </tr>
+                              <tr>
+                                <th>2
+                                </th>
+                                <td>1903</td>
+                                <td>25.37</td>
+                                <td>0%</td>
+                              </tr>
+                              <tr>
+                                <th>3</th>
+                                <td>
+                                  1904</td>
+                                <td>25.36</td>
+                                <td>-0.00039%</td>
+                              </tr>
+                              <tr>
+                                <th>4</th>
+                                <td>1905
+                                </td>
+                                <td>25.41</td>
+                                <td>+0.00197%</td>
+                              </tr>
+                              <tr>
+                                <th>5</th>
+                                <td>1906</td>
+
+                                <td>25.41</td>
+                                <td>0%</td>
+                              </tr>
+                              <tr>
+                                <th>6</th>
+                                <td>1907</td>
+                                <td>25.33
+                                </td>
+                                <td>-0.00315%</td>
+                              </tr>
+                              <tr>
+                                <th>7</th>
+                                <td>1908</td>
+                                <td>25.40</td>
+
+                                <td>+0.00276%</td>
+                              </tr>
+                              <tr>
+                                <th>8</th>
+                                <td>1909</td>
+                                <td>25.39</td>
+
+                                <td>-0.00039%</td>
+                              </tr>
+                              <tr>
+                                <th>9</th>
+                                <td>1910</td>
+                                <td>25.37</td>
+                                <td>
+                                  -0.00079%</td>
+                              </tr>
+                              <tr>
+                                <th>10</th>
+                                <td>1911</td>
+                                <td>25.54</td>
+                                <td>
+                                  +0.00670%</td>
+                              </tr>
+                              <tr>
+                                <th>11</th>
+                                <td>1912</td>
+                                <td>25.60</td>
+                                <td>
+                                  +0.00235%</td>
+                              </tr>
+                              <tr>
+                                <th>12</th>
+                                <td>1913</td>
+                                <td>25.56</td>
+                                <td>
+                                  -0.00156%</td>
+                              </tr>
+                              <tr>
+                                <th>13</th>
+                                <td>1914</td>
+                                <td>25.65</td>
+                                <td>
+                                  +0.00352%</td>
+                              </tr>
+                              <tr>
+                                <th>14</th>
+                                <td>1915</td>
+                                <td>25.62</td>
+                                <td>
+                                  -0.00117%</td>
+                              </tr>
+                              <tr>
+                                <th>15</th>
+                                <td>1916</td>
+                                <td>25.46</td>
+                                <td>
+                                  -0.00625%</td>
+                              </tr>
+                              <tr>
+                                <th>16</th>
+                                <td>1917</td>
+                                <td>25.44</td>
+                                <td>
+                                  -0.00079%</td>
+                              </tr>
+                              <tr>
+                                <th>17</th>
+                                <td>1918</td>
+                                <td>25.34</td>
+                                <td>
+                                  -0.00393%</td>
+                              </tr>
+                              <tr>
+                                <th>18</th>
+                                <td>1919</td>
+                                <td>25.56</td>
+                                <td>
+                                  +0.00868%</td>
+                              </tr>
+                              <tr>
+                                <th>19</th>
+                                <td>1920</td>
+                                <td>25.56</td>
+                                <td>0%
+                                </td>
+                              </tr>
+                              <tr>
+                                <th>20</th>
+                                <td>1921</td>
+                                <td>25.45</td>
+                                <td>-0.00430%</td>
+
+                              </tr>
+                              <tr>
+                                <th>21</th>
+                                <td>1922</td>
+                                <td>25.45</td>
+                                <td>0%</td>
+                              </tr>
+
+                              <tr>
+                                <th>22</th>
+                                <td>1923</td>
+                                <td>25.45</td>
+                                <td>0%</td>
+                              </tr>
+                              <tr>
+                                <th>23
+                                </th>
+                                <td>1924</td>
+                                <td>25.51</td>
+                                <td>+0.00236%</td>
+                              </tr>
+                              <tr>
+                                <th>24</th>
+
+                                <td>1925</td>
+                                <td>25.46</td>
+                                <td>-0.00196%</td>
+                              </tr>
+                              <tr>
+                                <th>25</th>
+
+                                <td>1926</td>
+                                <td>25.61</td>
+                                <td>+0.00589%</td>
+                              </tr>
+                              <tr>
+                                <th>26</th>
+                                <td>
+                                  1927</td>
+                                <td>25.54</td>
+                                <td>-0.00273%</td>
+                              </tr>
+                              <tr>
+                                <th>27</th>
+                                <td>
+                                  1928</td>
+                                <td>25.55</td>
+                                <td>+0.00039%</td>
+                              </tr>
+                              <tr>
+                                <th>28</th>
+                                <td>
+                                  1929</td>
+                                <td>25.42</td>
+                                <td>-0.00509%</td>
+                              </tr>
+                              <tr>
+                                <th>29</th>
+                                <td>
+                                  1930</td>
+                                <td>25.56</td>
+                                <td>+0.00551%</td>
+                              </tr>
+                              <tr>
+                                <th>30</th>
+                                <td>
+                                  1931</td>
+                                <td>25.66</td>
+                                <td>+0.00391%</td>
+                              </tr>
+                              <tr>
+                                <th>31</th>
+                                <td>
+                                  1932</td>
+                                <td>25.47</td>
+                                <td>-0.00740%</td>
+                              </tr>
+                              <tr>
+                                <th>32</th>
+                                <td>
+                                  1933</td>
+                                <td>25.49</td>
+                                <td>+0.00079%</td>
+                              </tr>
+                              <tr>
+                                <th>33</th>
+                                <td>
+                                  1934</td>
+                                <td>25.41</td>
+                                <td>-0.00314%</td>
+                              </tr>
+                              <tr>
+                                <th>34</th>
+                                <td>
+                                  1935</td>
+                                <td>25.53</td>
+                                <td>+0.00472%</td>
+                              </tr>
+                              <tr>
+                                <th>35</th>
+                                <td>
+                                  1936</td>
+                                <td>25.55</td>
+                                <td>+0.00078%</td>
+                              </tr>
+                              <tr>
+                                <th>36</th>
+                                <td>
+                                  1937</td>
+                                <td>25.54</td>
+                                <td>-0.00039%</td>
+                              </tr>
+                              <tr>
+                                <th>37</th>
+                                <td>
+                                  1938</td>
+                                <td>25.54</td>
+                                <td>0%</td>
+                              </tr>
+                              <tr>
+                                <th>38</th>
+                                <td>1939</td>
+
+                                <td>25.51</td>
+                                <td>-0.00117%</td>
+                              </tr>
+                              <tr>
+                                <th>39</th>
+                                <td>1940</td>
+
+                                <td>25.55</td>
+                                <td>+0.00157%</td>
+                              </tr>
+                              <tr>
+                                <th>40</th>
+                                <td>1941</td>
+                                <td>
+                                  25.82</td>
+                                <td>+0.01057%</td>
+                              </tr>
+                              <tr>
+                                <th>41</th>
+                                <td>1942</td>
+                                <td>
+                                  25.55</td>
+                                <td>-0.01046%</td>
+                              </tr>
+                              <tr>
+                                <th>42</th>
+                                <td>1943</td>
+                                <td>
+                                  25.38</td>
+                                <td>-0.00665%</td>
+                              </tr>
+                              <tr>
+                                <th>43</th>
+                                <td>1944</td>
+                                <td>
+                                  25.43</td>
+                                <td>+0.00197%</td>
+                              </tr>
+                              <tr>
+                                <th>44</th>
+                                <td>1945</td>
+                                <td>
+                                  25.44</td>
+                                <td>+0.00039%</td>
+                              </tr>
+                              <tr>
+                                <th>45</th>
+                                <td>1946</td>
+                                <td>
+                                  25.56</td>
+                                <td>+0.00472%</td>
+                              </tr>
+                              <tr>
+                                <th>46</th>
+                                <td>1947</td>
+                                <td>
+                                  25.57</td>
+                                <td>+0.00039%</td>
+                              </tr>
+                              <tr>
+                                <th>47</th>
+                                <td>1948</td>
+                                <td>
+                                  25.62</td>
+                                <td>+0.00196%</td>
+                              </tr>
+                              <tr>
+                                <th>48</th>
+                                <td>1949</td>
+                                <td>
+                                  25.52</td>
+                                <td>-0.00390%</td>
+                              </tr>
+                              <tr>
+                                <th>49</th>
+                                <td>1950</td>
+                                <td>
+                                  25.50</td>
+                                <td>-0.00078%</td>
+                              </tr>
+                              <tr>
+                                <th>50</th>
+                                <td>1951</td>
+                                <td>
+                                  25.52</td>
+                                <td>+0.00078%</td>
+                              </tr>
+                              <tr>
+                                <th>51</th>
+                                <td>1952</td>
+                                <td>
+                                  25.49</td>
+                                <td>-0.00118%</td>
+                              </tr>
+                              <tr>
+                                <th>52</th>
+                                <td>1953</td>
+                                <td>
+                                  25.55</td>
+                                <td>+0.00235%</td>
+                              </tr>
+                              <tr>
+                                <th>53</th>
+                                <td>1954</td>
+                                <td>
+                                  25.42</td>
+                                <td>-0.00509%</td>
+                              </tr>
+                              <tr>
+                                <th>54</th>
+                                <td>1955</td>
+                                <td>
+                                  25.38</td>
+                                <td>-0.00157%</td>
+                              </tr>
+                              <tr>
+                                <th>55</th>
+                                <td>1956</td>
+                                <td>
+                                  25.28</td>
+                                <td>-0.00394%</td>
+                              </tr>
+                              <tr>
+                                <th>56</th>
+                                <td>1957</td>
+                                <td>
+                                  25.53</td>
+                                <td>+0.00989%</td>
+                              </tr>
+                              <tr>
+                                <th>57</th>
+                                <td>1958</td>
+                                <td>
+                                  25.69</td>
+                                <td>+0.00627%</td>
+                              </tr>
+                              <tr>
+                                <th>58</th>
+                                <td>1959</td>
+                                <td>
+                                  25.49</td>
+                                <td>-0.00779%</td>
+                              </tr>
+                              <tr>
+                                <th>59</th>
+                                <td>1960</td>
+                                <td>
+                                  25.52</td>
+                                <td>+0.00118%</td>
+                              </tr>
+                              <tr>
+                                <th>60</th>
+                                <td>1961</td>
+                                <td>
+                                  25.39</td>
+                                <td>-0.00509%</td>
+                              </tr>
+                              <tr>
+                                <th>61</th>
+                                <td>1962</td>
+                                <td>
+                                  25.36</td>
+                                <td>-0.00118%</td>
+                              </tr>
+                              <tr>
+                                <th>62</th>
+                                <td>1963</td>
+                                <td>
+                                  25.43</td>
+                                <td>+0.00276%</td>
+                              </tr>
+                              <tr>
+                                <th>63</th>
+                                <td>1964</td>
+                                <td>
+                                  25.43</td>
+                                <td>0%</td>
+                              </tr>
+                              <tr>
+                                <th>64</th>
+                                <td>1965</td>
+                                <td>25.34</td>
+
+                                <td>-0.00354%</td>
+                              </tr>
+                              <tr>
+                                <th>65</th>
+                                <td>1966</td>
+                                <td>25.53</td>
+
+                                <td>+0.00750%</td>
+                              </tr>
+                              <tr>
+                                <th>66</th>
+                                <td>1967</td>
+                                <td>25.35</td>
+                                <td>
+                                  -0.00705%</td>
+                              </tr>
+                              <tr>
+                                <th>67</th>
+                                <td>1968</td>
+                                <td>25.41</td>
+                                <td>
+                                  +0.00237%</td>
+                              </tr>
+                              <tr>
+                                <th>68</th>
+                                <td>1969</td>
+                                <td>25.64</td>
+                                <td>
+                                  +0.00905%</td>
+                              </tr>
+                              <tr>
+                                <th>69</th>
+                                <td>1970</td>
+                                <td>25.58</td>
+                                <td>
+                                  -0.00234%</td>
+                              </tr>
+                              <tr>
+                                <th>70</th>
+                                <td>1971</td>
+                                <td>25.35</td>
+                                <td>
+                                  -0.00899%</td>
+                              </tr>
+                              <tr>
+                                <th>71</th>
+                                <td>1972</td>
+                                <td>25.60</td>
+                                <td>
+                                  +0.00986%</td>
+                              </tr>
+                              <tr>
+                                <th>72</th>
+                                <td>1973</td>
+                                <td>25.76</td>
+                                <td>
+                                  +0.00625%</td>
+                              </tr>
+                              <tr>
+                                <th>73</th>
+                                <td>1974</td>
+                                <td>25.41</td>
+                                <td>
+                                  -0.01359%</td>
+                              </tr>
+                              <tr>
+                                <th>74</th>
+                                <td>1975</td>
+                                <td>25.44</td>
+                                <td>
+                                  +0.00118%</td>
+                              </tr>
+                              <tr>
+                                <th>75</th>
+                                <td>1976</td>
+                                <td>25.26</td>
+                                <td>
+                                  -0.00708%</td>
+                              </tr>
+                              <tr>
+                                <th>76</th>
+                                <td>1977</td>
+                                <td>25.40</td>
+                                <td>
+                                  +0.00554%</td>
+                              </tr>
+                              <tr>
+                                <th>77</th>
+                                <td>1978</td>
+                                <td>25.49</td>
+                                <td>
+                                  +0.00354%</td>
+                              </tr>
+                              <tr>
+                                <th>78</th>
+                                <td>1979</td>
+                                <td>25.60</td>
+                                <td>
+                                  +0.00432%</td>
+                              </tr>
+                              <tr>
+                                <th>79</th>
+                                <td>1980</td>
+                                <td>25.60</td>
+                                <td>0%
+                                </td>
+                              </tr>
+                              <tr>
+                                <th>80</th>
+                                <td>1981</td>
+                                <td>25.68</td>
+                                <td>+0.00312%</td>
+
+                              </tr>
+                              <tr>
+                                <th>81</th>
+                                <td>1982</td>
+                                <td>25.61</td>
+                                <td>-0.00273%</td>
+
+                              </tr>
+                              <tr>
+                                <th>82</th>
+                                <td>1983</td>
+                                <td>25.81</td>
+                                <td>+0.00781%</td>
+                              </tr>
+
+                              <tr>
+                                <th>83</th>
+                                <td>1984</td>
+                                <td>25.32</td>
+                                <td>-0.01898%</td>
+                              </tr>
+                              <tr>
+
+                                <th>84</th>
+                                <td>1985</td>
+                                <td>25.56</td>
+                                <td>+0.00948%</td>
+                              </tr>
+                              <tr>
+                                <th>
+                                  85</th>
+                                <td>1986</td>
+                                <td>25.65</td>
+                                <td>+0.00352%</td>
+                              </tr>
+                              <tr>
+                                <th>86
+                                </th>
+                                <td>1987</td>
+                                <td>25.88</td>
+                                <td>+0.00897%</td>
+                              </tr>
+                              <tr>
+                                <th>87</th>
+
+                                <td>1988</td>
+                                <td>25.77</td>
+                                <td>-0.00425%</td>
+                              </tr>
+                              <tr>
+                                <th>88</th>
+
+                                <td>1989</td>
+                                <td>25.62</td>
+                                <td>-0.00582%</td>
+                              </tr>
+                              <tr>
+                                <th>89</th>
+                                <td>
+                                  1990</td>
+                                <td>25.85</td>
+                                <td>+0.00898%</td>
+                              </tr>
+                              <tr>
+                                <th>90</th>
+                                <td>
+                                  1991</td>
+                                <td>25.79</td>
+                                <td>-0.00232%</td>
+                              </tr>
+                              <tr>
+                                <th>91</th>
+                                <td>
+                                  1992</td>
+                                <td>25.79</td>
+                                <td>0%</td>
+                              </tr>
+                              <tr>
+                                <th>92</th>
+                                <td>1993</td>
+
+                                <td>25.75</td>
+                                <td>-0.00155%</td>
+                              </tr>
+                              <tr>
+                                <th>93</th>
+                                <td>1994</td>
+
+                                <td>25.78</td>
+                                <td>+0.00117%</td>
+                              </tr>
+                              <tr>
+                                <th>94</th>
+                                <td>1995</td>
+                                <td>
+                                  25.82</td>
+                                <td>+0.00155%</td>
+                              </tr>
+                              <tr>
+                                <th>95</th>
+                                <td>1996</td>
+                                <td>
+                                  25.82</td>
+                                <td>0%</td>
+                              </tr>
+                              <tr>
+                                <th>96</th>
+                                <td>1997</td>
+                                <td>25.93</td>
+
+                                <td>+0.00426%</td>
+                              </tr>
+                              <tr>
+                                <th>97</th>
+                                <td>1998</td>
+                                <td>26.18</td>
+
+                                <td>+0.00964%</td>
+                              </tr>
+                              <tr>
+                                <th>98</th>
+                                <td>1999</td>
+                                <td>25.77</td>
+                                <td>
+                                  -0.01566%</td>
+                              </tr>
+                              <tr>
+                                <th>99</th>
+                                <td>2000</td>
+                                <td>25.85</td>
+                                <td>
+                                  +0.00310%</td>
+                              </tr>
+                              <tr>
+                                <th>100</th>
+                                <td>2001</td>
+                                <td>25.91</td>
+                                <td>
+                                  +0.00232%</td>
+                              </tr>
+                              <tr>
+                                <th>101</th>
+                                <td>2002</td>
+                                <td>26.04</td>
+                                <td>
+                                  +0.00502%</td>
+                              </tr>
+                              <tr>
+                                <th>102</th>
+                                <td>2003</td>
+                                <td>25.90</td>
+                                <td>
+                                  -0.00538%</td>
+                              </tr>
+                              <tr>
+                                <th>103</th>
+                                <td>2004</td>
+                                <td>25.92</td>
+                                <td>
+                                  +0.00077%</td>
+                              </tr>
+                              <tr>
+                                <th>104</th>
+                                <td>2005</td>
+                                <td>25.93</td>
+                                <td>
+                                  +0.00039%</td>
+                              </tr>
+                              <tr>
+                                <th>105</th>
+                                <td>2006</td>
+                                <td>25.82</td>
+                                <td>
+                                  -0.00424%</td>
+                              </tr>
+                              <tr>
+                                <th>106</th>
+                                <td>2007</td>
+                                <td>25.84</td>
+                                <td>
+                                  +0.00077%</td>
+                              </tr>
+                              <tr>
+                                <th>107</th>
+                                <td>2008</td>
+                                <td>25.71</td>
+                                <td>
+                                  -0.00503%</td>
+                              </tr>
+                              <tr>
+                                <th>108</th>
+                                <td>2009</td>
+                                <td>25.98</td>
+                                <td>
+                                  +0.01050%</td>
+                              </tr>
+                              <tr>
+                                <th>109</th>
+                                <td>2010</td>
+                                <td>26.08</td>
+                                <td>
+                                  +0.00385%</td>
+                              </tr>
+                              <tr>
+                                <th>110</th>
+                                <td>2011</td>
+                                <td>25.88</td>
+                                <td>
+                                  -0.00767%</td>
+                              </tr>
+                              <tr>
+                                <th>111</th>
+                                <td>2012</td>
+                                <td>25.99</td>
+                                <td>
+                                  +0.00425%</td>
+                              </tr>
+                              <tr>
+                                <th>112</th>
+                                <td>2013</td>
+                                <td>26.05</td>
+                                <td>
+                                  +0.00231%</td>
+                              </tr>
+                              <tr>
+                                <th>113</th>
+                                <td>2014</td>
+                                <td>26.04</td>
+                                <td>
+                                  -0.00038%</td>
+                              </tr>
+                              <tr>
+                                <th>114</th>
+                                <td>2015</td>
+                                <td>26.12</td>
+                                <td>
+                                  +0.00307%</td>
+                              </tr>
+                              <tr>
+                                <th>115</th>
+                                <td>2016</td>
+                                <td>26.23</td>
+                                <td>
+                                  +0.00421%</td>
+                              </tr>
+                              <tr>
+                                <th>116</th>
+                                <td>2017</td>
+                                <td>26.03</td>
+                                <td>
+                                  -0.00762%</td>
+                              </tr>
+                              <tr>
+                                <th>117</th>
+                                <td>2018</td>
+                                <td>26.04</td>
+                                <td>
+                                  +0.00038%</td>
+                              </tr>
+                              <tr>
+                                <th>118</th>
+                                <td>2019</td>
+                                <td>26.20</td>
+                                <td>
+                                  +0.00614%</td>
+                              </tr>
+                              <tr>
+                                <th>119</th>
+                                <td>2020</td>
+                                <td>26.18</td>
+                                <td>
+                                  -0.00076%</td>
+                              </tr>
+                              <tr>
+                                <th>120</th>
+                                <td>2021</td>
+                                <td>25.99</td>
+                                <td>
+                                  -0.00726%</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title text-center">Rata-Rata Suhu Pertahun Di Indonesia Dari Tahun 1901 Hingga
+                    2021 (celcius)</h4>
+                  <div id="suhuindopertahun"></div>
+                  <p class="mt-3 mb-4 mb-lg-0">
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title text-center">5 Provinsi Teratas Dengan Suhu Rata-Rata Terpanas Dalam Rentang
+                    Tahun 1991 Hingga 2020</h4>
+                  <div id="rataRataSuhu"></div>
+                  <p class="mt-3 mb-4 mb-lg-0">
+                    Jakarta Menduduki Peringkat Pertama Dengan Rata-Rata Suhu
+                    <b>28.04°C</b><br />Dari Rentang Tahun 1991 Hingga 2020 ...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title text-center">Rata-Rata Suhu Jakarta</h4>
+                  <div id="rataRataSuhuJakarta"></div>
+                  <p class="mt-3 mb-4 mb-lg-0">
+                    Dari Rentang Tahun 1991 Hingga 2020, <br />Rata-Rata Suhu
+                    Tertinggi Di Jakarta Berada Pada Bulan Oktober
+                  </p>
+                </div>
+              </div>
+            </div> -->
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title text-center">Perkembangan Suhu Dan Curah Hujan Di Indonesia Dari Tahun 2000
+                    Hingga 2021</h4>
+                  <div id="suhucurah"></div>
+                  <p class="mt-3 mb-4 mb-lg-0">
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- content-wrapper ends -->
+            <!-- partial:partials/_footer.html -->
+            <footer class="footer">
+              <div class="footer-wrap">
+                <div class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">
+                  <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © Team GRADIO
+                    </a>2023</span>
+                </div>
+              </div>
+            </footer>
+            <!-- partial -->
+          </div>
+          <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+      </div>
+      <!-- container-scroller -->
+      <!-- base:js -->
+      <script src="assets/vendors/base/vendor.bundle.base.js"></script>
+      <!-- endinject -->
+      <!-- Plugin js for this page-->
+      <!-- End plugin js for this page-->
+      <!-- inject:js -->
+      <script src="assets/js/template.js"></script>
+      <!-- endinject -->
+      <!-- plugin js for this page -->
+      <!-- End plugin js for this page -->
+      <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+      <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+      <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+      <script src="https://cdn.amcharts.com/lib/5/geodata/indonesiaLow.js"></script>
+      <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+      <script src="assets/vendors/progressbar.js/progressbar.min.js"></script>
+      <script src="assets/vendors/chartjs-plugin-datalabels/chartjs-plugin-datalabels.js"></script>
+      <script src="assets/vendors/justgage/raphael-2.1.4.min.js"></script>
+      <script src="assets/vendors/justgage/justgage.js"></script>
+      <script src="../assets/assets/jquery/dist/jquery.min.js"></script>
+      <script src="assets/js/jquery.cookie.js" type="text/javascript"></script>
+      <!-- Custom js for this page-->
+      <script src="assets/js/dashboard.js"></script>
+      <script src="assets/js/chart_iklim.js"></script>
+      <script src="assets/js/map.js"></script>
+      <!-- End custom js for this page-->
+</body>
+
+</html>
